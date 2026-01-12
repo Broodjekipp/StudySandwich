@@ -1,6 +1,6 @@
 # StudySandwich
 
-A simple terminal-based flashcard study app with spaced repetition.
+A simple terminal-based flashcard study app
 
 ## Usage
 
