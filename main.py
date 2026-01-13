@@ -14,6 +14,7 @@ SPLIT_CHAR = ";"
 LABELS = ["a", "b", "c", "d"]
 LABEL_NUMBERS = ["1", "2", "3", "4"]
 
+
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -514,7 +515,10 @@ def main_menu():
         elif choice in ("3", "create", "create set"):
             create_set()
         elif choice in ("4", "exit"):
-            if input("Are you sure you want to exit (y/N):").strip().lower() in ("y", "yes"):
+            if input("Are you sure you want to exit (y/N):").strip().lower() in (
+                "y",
+                "yes",
+            ):
                 return
             continue
         else:
