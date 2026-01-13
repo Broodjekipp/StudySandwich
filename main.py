@@ -518,7 +518,9 @@ def main_menu():
         elif choice in ("3", "create", "create set"):
             create_set()
         elif choice in ("4", "exit"):
-            return
+            if input("Are you sure you want to exit (y/N):").strip().lower() in ("y", "yes"):
+                return
+            continue
         else:
             input("Invalid choice! Press ENTER...")
 
