@@ -20,8 +20,8 @@ Choose **Create** from the menu, then either:
 Choose **Study**, select your set, and work through the cards. Cards progress through 4 stages:
 1. Introduction (see both sides)
 2. Multiple choice
-3. Open-ended question
-4. Second open-ended (mastered after this)
+3. Open-ended question (2x)
+4. Done
 
 Answer multiple choice with `a-d` or `1-4`. For open-ended, type the exact definition.
 
