@@ -168,11 +168,9 @@ def study_set():
         card = queue.popleft()
         stage = card["stage"]
 
-        # Skip finished cards
         if stage == 4:
             continue
 
-        # Stage 0: introduce card
         if stage == 0:
             if in_progress_count >= max_cards_in_progress:
                 queue.append(card)
@@ -188,7 +186,6 @@ def study_set():
             in_progress_count += 1
             queue.append(card)
 
-        # Stage 1: multiple choice
         elif stage == 1:
             correct = multiple_choice_question(
                 card["item"],
@@ -207,7 +204,6 @@ def study_set():
 
             queue.append(card)
 
-        # Stage 2 & 3: open-ended
         elif stage in (2, 3):
             correct = open_ended_question(
                 card["item"],
